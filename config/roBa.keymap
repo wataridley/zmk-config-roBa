@@ -38,7 +38,7 @@
         };
 
         scroll {
-            bindings = <&msc MOVE_X(20)>;
+            bindings = <&msc MOVE_Y(20)>;
             key-positions = <31 32>;
         };
     };
