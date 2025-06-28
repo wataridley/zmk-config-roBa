@@ -36,6 +36,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        scroll {
+            bindings = <&msc MOVE_X(20)>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -63,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E         &kp R                       &kp T                                      &kp Y                        &kp U  &mt SCROLLLOCK I  &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D         &kp F                       &kp G        &mkp MB3       &kp MINUS      &kp H                        &kp J  &kp K             &kp L    &mt RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &kp X           &kp C         &kp V                       &kp B        &kp COLON      &kp SEMICOLON  &kp N                        &kp M  &kp COMMA         &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LC(SPACE)  &lt 1 SPACE  &lt 2 TAB      &lt 3 ENTER    &mt RIGHT_COMMAND RC(SPACE)                                    &kp ESC
+&kp Q               &kp W           &kp E         &kp R                       &kp T                                    &kp Y                        &kp U  &kp I     &kp O     &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D         &kp F                       &kp G        &mkp MB3       &kp COMMA    &kp H                        &kp J  &kp K     &kp L     &mt RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z    &kp X           &kp C         &kp V                       &kp B        &kp COLON      &kp PERIOD   &kp N                        &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
+&kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LC(SPACE)  &lt 1 SPACE  &lt 2 TAB      &lt 3 ENTER  &mt RIGHT_COMMAND RC(SPACE)                             &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -76,7 +81,7 @@
             bindings = <
 &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)   &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                 &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(N9)  &kp LS(N0)
 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &trans            &kp C_MUTE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp MINUS   &kp EQUAL
-&kp PRINTSCREEN       &trans                &trans             &trans            &trans            &trans          &trans         &kp COLON         &kp DOUBLE_QUOTES  &mkp MB1          &mkp MB2    &mkp MB3
+&kp PRINTSCREEN       &trans                &trans             &trans            &trans            &trans          &trans         &kp COLON         &kp DOUBLE_QUOTES  &kp COMMA         &kp PERIOD  &trans
 &trans                &trans                &trans             &trans            &trans            &trans          &kp BACKSPACE  &kp DELETE                                                         &trans
             >;
 
